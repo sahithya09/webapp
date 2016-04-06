@@ -1,0 +1,92 @@
+<div class="main-panel scrollable-container container-fluid" id="createxp">
+	<div class="top-bar">
+		<div class="section-content u-padding-Hl">
+			<div class="row header">
+				<div class="col-sm-11 text-center u-margin-Txs">
+					<h4 class="u-margin-An inline v-top">Create New Experiment</h4>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="main-panel__content u-padding-Hl">
+		<div class="row main-content">
+			<div class="col-sm-10">
+				<form class="new-app-view edit-first">
+					<div class="list-group list-group-lg">
+						<li class="list-group-item">
+							<div class="row exp-content u-padding-Vl">
+								<div class="col-sm-3">
+									<div class="panel-title">
+										Experiment Name
+									</div>
+									<div class="panel-details u-margin-Txs">
+										<span class="text-subtle text-p4">Give it a Name</span>
+									</div>
+								</div>
+								<div class="col-sm-9">
+									<div class="col-sm-9 col-sm-offset-1">
+										<div class="form-group">
+											<input type="text"  id="name-input" class="form-control" rows="4" placeholder="Give me a name..."/>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row exp-content u-padding-Vl">
+								<div class="col-sm-3">
+									<div class="panel-title">
+										Experiment Description
+									</div>
+									<div class="panel-details u-margin-Txs">
+										<span class="text-subtle text-p4">(optional)Describe it for reference for later</span>
+									</div>
+								</div>
+								<div class="col-sm-9">
+									<div class="col-sm-9 col-sm-offset-1">
+										<div class="form-group">
+											<textarea class="form-control" rows="3" id="desc-input" placeholder="Enter Description..."></textarea>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row exp-content u-padding-Vl">
+								<div class="col-sm-3">
+									<div class="panel-title">
+										Data Source
+									</div>
+									<div class="panel-details u-margin-Txs">
+										<span class="text-subtle text-p4">choose the data source to choose input variables from</span>
+									</div>
+								</div>
+								<div class="col-sm-9">
+									<div class="col-sm-9 col-sm-offset-1">
+										<div class="form-group">
+											<select id="datasource-varibles" class="form-control">
+												<option>sample_libsvm_data.txt</option>
+												<option>sample_isotonic_regression_data.txt</option>
+												<option>sample_lda_data.txt</option>
+												<option>sample_linear_regression_data.txt</option>
+												<option>sample_movielens_data.txt</option>												
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<div class="col-sm-12">
+							<button type="submit"  id="add-exp-save-btn" class="ui green right labeled  button next-btn">
+								<i class="labeled right checkmark icon"></i>
+	                              Create
+                             </button>
+						</div></div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+

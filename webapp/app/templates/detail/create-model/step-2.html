@@ -1,0 +1,30 @@
+<div class="ui attached segment">
+    <form id="model-form" class="form-horizontal">
+        <div class="form-group">
+            <label for="Label_Variables" class="col-sm-3 control-label">Label Variables</label>
+            <div class="col-sm-9">
+                <select name="label_variable" class="ui search selection dropdown col-sm-7" id="search-select">
+                    <option value="Required Machines Count">Required Machines Count</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="Input_Variables" class="col-sm-3 control-label">Input Variables</label>
+            <div class="col-sm-9">
+                <select name="input_variables[]" id="multi-select" name="skills" multiple="" class="ui fluid dropdown col-sm-12">
+                    <option value="CPU Usage">CPU Usage</option>
+                    <option value="Real Connections">Real Connections</option>
+                    <option value="# CPU Cores"># CPU Cores</option>
+                    <option value="% RAM Usage">% RAM Usage</option>
+                    <option value="Avg. Picture Size">Avg. Picture Size</option>
+                    <option value="Min. Picture Size">Min. Picture Size</option>
+                    <option value="Max. Picture Size">Max. Picture Size</option>
+                </select>
+            </div>
+        </div>
+    </form>
+</div>
+<div class="modal-footer">
+    <button id="back-model-variable-btn" class="model-variable-back-btn sm ui button">Back</button>
+    <button id="next-btn" class="model-variable-btn sm ui green button" type="button">Next</button>
+</div>

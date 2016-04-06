@@ -1,0 +1,55 @@
+<div id="dashboard">
+	<div class="main-panel scrollable-container container-fluid">
+		<div class="top-bar">
+			<div class="section-content u-padding-Hl">
+				<div class="row header">
+					<div class="col-sm-1 text-center u-padding-Txxs">
+						<i id="top-bar__status" class="search large icon"></i>
+					</div>
+					<div class="col-sm-10">
+						<input class="form-control"type="text" placeholder="search...">		
+
+					</div>
+					<div class="col-sm-1 text-center u-padding-Txxs">
+						<div id="add-app-btn">
+							<label>
+								<i class="add large circle icon"></i>
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main-panel__content u-padding-Axxl">
+		<div class="ui grid">
+			<div class="centered twelve wide column">
+			<div class="ui celled list">
+				<% experimentCollection.each(function(experiment, key){ %>
+				<div class="item">
+					<div class="right floated content">
+						<button class="delete mini red basic ui button" data-id="<%= experiment.get('id') %>">Delete</button>
+					</div>  
+					<img class="ui avatar image" src="/img/exp.svg">
+					<div class="content">
+						<a class="header exp-header" data-id="<%= experiment.get('id') %>"><%= experiment.get('name') %></a>
+						<%= experiment.get('description') %>
+					</div>
+				</div>
+				<% }); %>
+			</div>				
+			</div>
+		</div>
+			<foooter class="app-footer u-margin-Txl">
+				<div class="section-content u-padding-Ll">
+					<ul class="list-inline">
+						<li class="hidden-xs"><a href="/#/">Home</a></li>
+						<li><a href="/#/">FAQ</a></li>
+						<li><a href="/#/">Privacy Policy</a></li>
+						<li class="feedback-link"><a class="btn btn-default btn-xs" href="">Feedback</a></li>
+					</ul>			
+				</div>
+
+			</foooter>
+		</div>
+	</div>
+</div>

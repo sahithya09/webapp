@@ -1,0 +1,46 @@
+<div class="ui attached segment">
+	<div class="ui form u-padding-As text-center">
+		<div class="inline field">
+			<label>Approach Template</label>
+			<select id="edit_model_selection" class="ui search dropdown">
+				<option>Choose one...</option>
+				<% templates.each(function(value, key) { %>
+					<option value="<%= value.get('name')%>" data-id="<%= value.get('id')%>"><%= value.get('name')%></option>
+				<% }) %>			
+			</select>
+		</div>
+	</div>	
+	<div class="u-margin-As attribute-bar">
+		<span class="attribute-content">
+			Attributes
+		</span>
+	</div>
+	<form id="model-form"  class="ui form">
+		<table class="ui four column celled striped table">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Description</th>
+					<th>Range</th>
+					<th>Input Value</th>
+				</tr>
+			</thead>
+			<tbody id="attribute-tbody">
+
+			</tbody>
+		</table>	
+	</form>
+</div>
+<div class="modal-footer">
+	<button id="back-variable-btn" type="button" class="back-btn-approach sm ui button">Back</button>
+	<button id="next-btn" class="add-btn-approach sm ui green button" type="button">Save</button>
+</div>
+
+
+
+
+
+
+
+
+

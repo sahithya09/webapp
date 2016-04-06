@@ -1,0 +1,13 @@
+<input type="hidden" name="approach_template[id]" value="<%= template.get('id')%>">
+<input type="hidden" name="approach_template[name]" value="<%= template.get('name')%>">
+<% _.each(template.get('parameters'), function(value, key) { %>
+<tr>
+	<td><%= value.name %></td>
+	<td><%= value.description %></td>
+	<td><%= value.range %></td>
+	<td>
+		<input name="parameters[][name]" type="hidden" value="<%= value.name %>" placeholder="">
+		<input name="parameters[][value]" type="text" placeholder="">
+	</td>
+</tr>
+<% }) %>
